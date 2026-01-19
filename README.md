@@ -39,28 +39,17 @@ This portfolio website serves as a professional online presence, highlighting sk
 
 ```
 doc/
-├── index.html           # Main HTML file
-├── style.css            # Primary stylesheet
+├── portfolio.html       # Main HTML file
+├── portfolio.css        # Primary stylesheet
 ├── fabio.jpg            # Profile image
 ├── css/                 # FontAwesome icons
 │   ├── all.css
-│   ├── all.min.css
 │   ├── brands.css
-│   ├── brands.min.css
 │   ├── fontawesome.css
-│   ├── fontawesome.min.css
 │   ├── regular.css
-│   ├── regular.min.css
 │   ├── solid.css
-│   ├── solid.min.css
 │   ├── svg-with-js.css
-│   ├── svg-with-js.min.css
-│   ├── v4-font-face.css
-│   ├── v4-font-face.min.css
-│   ├── v4-shims.css
-│   ├── v4-shims.min.css
-│   ├── v5-font-face.css
-│   └── v5-font-face.min.css
+│   └── v5-font-face.css
 ├── webfonts/            # FontAwesome web fonts
 └── README.md            # This file
 ```
@@ -81,7 +70,7 @@ doc/
    ```
 
 2. **Open the website locally:**
-   - Direct approach: Open `index.html` in your browser
+   - Direct approach: Open `portfolio.html` in your browser
    - Server approach: Use a local server (Python, Node.js, etc.)
 
    **Python 3:**
@@ -134,7 +123,7 @@ doc/
 
 ### Updating Personal Information
 
-**Edit in `index.html`:**
+**Edit in `portfolio.html`:**
 ```html
 <h1 class="primary-title">Your Name</h1>
 <span class="subtitle">Your Professional Title</span>
@@ -143,7 +132,7 @@ doc/
 
 ### Adding Social Media Links
 
-**Edit social icons in `index.html`:**
+**Edit social icons in `portfolio.html`:**
 ```html
 <a href="your-profile-url" class="social-icon">
     <i class="fab fa-platform-name"></i>
@@ -152,7 +141,7 @@ doc/
 
 ### Changing Colors
 
-**Edit CSS variables in `style.css`:**
+**Edit CSS variables in `portfolio.css`:**
 ```css
 :root {
     --primary-dark: #0f0f23;      /* Background */
@@ -193,7 +182,7 @@ git push -u origin main
 
 ### Option 3: Traditional Web Hosting
 1. Upload files via FTP/SFTP
-2. Ensure `index.html` is in root directory
+2. Ensure `portfolio.html` is in root directory
 3. Access via domain
 
 ## 🔍 Browser Support
@@ -211,7 +200,7 @@ git push -u origin main
 ## 🎯 Performance Optimization
 
 ### Current Implementation
-- Minified CSS files available in `css/` directory
+- Clean, production-ready CSS files
 - Optimized image loading with `object-fit`
 - CSS animations using GPU-accelerated properties
 
@@ -267,7 +256,12 @@ This project is personal portfolio work. Feel free to use as inspiration for you
 
 ## 📝 Changelog
 
-### Version 1.0.0 (Current)
+### Version 1.1.0 (Current)
+- Renamed files for consistency: `index.html` → `portfolio.html`, `style.css` → `portfolio.css`
+- Removed unnecessary CSS files: all `.min.css` variants and v4 compatibility files
+- Streamlined project structure for better maintainability
+
+### Version 1.0.0
 - Initial portfolio launch
 - Modern cyberpunk design with gradient backgrounds
 - Responsive layout with mobile optimization
@@ -288,6 +282,6 @@ This project is personal portfolio work. Feel free to use as inspiration for you
 
 ---
 
-**Last Updated:** January 18, 2026  
-**Version:** 1.0.0  
+**Last Updated:** January 19, 2026  
+**Version:** 1.1.0  
 **Status:** Active
